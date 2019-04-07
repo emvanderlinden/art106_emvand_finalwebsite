@@ -13,11 +13,11 @@ var mooneX = 98;
 var hlineY = 372;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(windowWidth, 500);
 }
 
 function draw() {
-  background(255);
+  background(8, 15, 38);
 
   //moonA lighter teal circle on bottom
   stroke(0);
@@ -27,37 +27,37 @@ function draw() {
   
   moonaX = moonaX + 2;
   
-  if(moonaX >= 600){
+  if(moonaX >= windowWidth+100){
     moonaX = -200
   }
   
   moonbY = moonbY + 2.5;
   
-  if(moonbY >= 600){
+  if(moonbY >=600){
     moonbY = -200
   }
   
   mooncX = mooncX - 1.75;
   
-  if(mooncX <=-200){
-    mooncX = 700
+  if(mooncX <=- 200){
+    mooncX = windowWidth + 200
   }
   
   moondY = moondY - 3
   
-  if(moondY <= -200){
+  if(moondY <= - 200){
     moondY = 650
   }
   
   mooneX = mooneX - 4
-  if(mooneX <=-400){
-    mooneX = 625
+  if(mooneX <=-200){
+    mooneX = windowWidth + 125
   }
   
   
   //moonB dark blue circle
   fill(2, 32, 55);
-  ellipse(moonbX, moonbY, 249, 249);
+  ellipse(147, moonbY, 249, 249);
   
   //moonC darker light blue circle
   fill(164, 200, 228);
@@ -65,7 +65,7 @@ function draw() {
   
   //moonD dark teal circle
   fill(14, 59, 94);
-  ellipse(moondX, moondY, 246, 246);
+  ellipse(windowWidth - 300, moondY, 246, 246);
   
   //moonE lightest blue circle
   fill(209 , 227, 241);
@@ -75,7 +75,7 @@ function draw() {
   stroke(0);
   strokeWeight(1);
   fill(38, 34, 97);
-  circle(271, 240, 334 / 2);
+  circle(windowWidth/2, 240, 334 / 2);
   
     
   //ring around saturn
