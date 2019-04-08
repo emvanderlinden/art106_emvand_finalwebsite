@@ -13,7 +13,8 @@ var mooneX = 98;
 var hlineY = 372;
 
 function setup() {
-  createCanvas(windowWidth, 500);
+  var canvas = createCanvas(windowWidth, 500);
+    canvas.parent("header");
 }
 
 function draw() {
