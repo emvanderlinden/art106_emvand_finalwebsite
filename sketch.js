@@ -20,6 +20,21 @@ function setup() {
 function draw() {
   background(8, 15, 38);
 
+    
+//name
+    fill(255);
+    textSize(30);
+    textFont('Helvetica');
+    text('Emily', 48, 402);
+    text('Vanderlinden', 8, 437);
+    
+//my name
+    fill(101, 129, 165);
+    textSize(30);
+    textFont('Helvetica');
+    text('Emily', 50, 400);
+    text('Vanderlinden', 10, 435);    
+    
   //moonA lighter teal circle on bottom
   stroke(0);
   strokeWeight(1 / 4);
