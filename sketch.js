@@ -14,31 +14,26 @@ var hlineY = 372;
 
 function setup() {
   var canvas = createCanvas(windowWidth, 500);
-    canvas.parent("header");
+ 
+canvas.parent("header")    
 }
 
 function draw() {
-  background(8, 15, 38);
+  background(148, 153, 183);
 
     
 //name
     fill(255);
     textSize(30);
-    textFont('Helvetica');
+    textFont('Bebas Neue Rounded');
     text('Emily', 48, 402);
     text('Vanderlinden', 8, 437);
+     
     
-//my name
-    fill(101, 129, 165);
-    textSize(30);
-    textFont('Helvetica');
-    text('Emily', 50, 400);
-    text('Vanderlinden', 10, 435);    
-    
-  //moonA lighter teal circle on bottom
+  //moonA secondary color
   stroke(0);
   strokeWeight(1 / 4);
-  fill(105, 141, 168);
+  fill(121, 134, 203);
   ellipse(moonaX, moonaY, 245, 245)
   
   moonaX = moonaX + 2;
@@ -71,29 +66,30 @@ function draw() {
   }
   
   
-  //moonB dark blue circle
-  fill(2, 32, 55);
+  //moonB secondary light color
+  fill(170, 182, 254);
   ellipse(147, moonbY, 249, 249);
   
-  //moonC darker light blue circle
-  fill(164, 200, 228);
+  //moonC primary color
+  fill(197, 202, 233);
   ellipse(mooncX, mooncY, 215, 215);
   
-  //moonD dark teal circle
-  fill(14, 59, 94);
+  //moonD primary light color
+  fill(248, 253, 255);
   ellipse(windowWidth - 300, moondY, 246, 246);
   
-  //moonE lightest blue circle
-  fill(209 , 227, 241);
+  //moonE primary light color
+  fill(248 , 253, 255);
   ellipse(mooneX, mooneY, 195, 195);
-  
   
   stroke(0);
   strokeWeight(1);
-  fill(38, 34, 97);
+  fill(73, 89, 154);
   circle(windowWidth/2, 240, 334 / 2);
   
-    
+
+  translate (windowWidth/2-270,-10);
+
   //ring around saturn
   noFill()
   stroke(208, 210, 211);
@@ -233,6 +229,5 @@ function draw() {
     curveVertex(322, 138);
     curveVertex(354, 135);
     curveVertex(386, 130);
-  endShape();
-   
+  endShape(); 
 }
