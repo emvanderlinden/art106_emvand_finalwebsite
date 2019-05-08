@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: rgb(8, 15, 38);
+    background-color: rgb(148, 153, 183);
 }
 
 #header{
@@ -18,5 +18,5 @@ body {
 #portfolio img{
     max-width: 500px;
     padding: 20px;
-
+    
 }
