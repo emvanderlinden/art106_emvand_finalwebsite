@@ -22,10 +22,11 @@ body {
 }
 
 #portfolio p{
-    font-family: bebas-neue-rounded, sans-serif;
+ font-family: ambroise-std, serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 30;
     max-width: 500px;
     padding: 20px;
     
 }
+
