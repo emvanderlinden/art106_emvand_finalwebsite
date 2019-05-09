@@ -20,3 +20,12 @@ body {
     padding: 20px;
     
 }
+
+#portfolio p{
+    font-family: bebas-neue-rounded, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 500px;
+    padding: 20px;
+    
+}
