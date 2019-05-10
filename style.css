@@ -22,6 +22,9 @@ body {
 }
 
 #portfolio p{
+    font-family: 'Oswald', sans-serif;
+    font-style: extra-light;
+    font-weight: 30;
     max-width: 500px;
     padding: 20px;
     
