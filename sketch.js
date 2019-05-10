@@ -12,6 +12,12 @@ var mooneX = 98;
 
 var hlineY = 372;
 
+let myFont;
+function preload() {
+  myFont = loadFont('Oswald-Bold.ttf');
+}
+
+
 function setup() {
   var canvas = createCanvas(windowWidth, 500);
  
@@ -25,7 +31,7 @@ function draw() {
 //name
     fill(255);
     textSize(30);
-    textFont('Bebas Neue Rounded');
+    textFont(myFont);
     text('Emily', 48, 402);
     text('Vanderlinden', 8, 437);
      
